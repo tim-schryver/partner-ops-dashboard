@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #ecf1f5; color: #152b40; font: 1rem/1.5 system-ui, sans-serif; }
+main { width: min(100% - 2rem, 65rem); margin: 4rem auto; }
+h1 { margin-bottom: 0; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -.05em; }
+.summary, .filters { display: flex; flex-wrap: wrap; gap: 1rem; margin: 2rem 0; }
+.summary > div { flex: 1 1 9rem; padding: 1rem; border-radius: .75rem; background: #153452; color: white; }
+.summary strong { display: block; font-size: 1.75rem; }
+label { display: grid; gap: .25rem; }
+input, select { padding: .6rem; border: 1px solid #52697b; border-radius: .35rem; background: white; color: inherit; font: inherit; }
+.table { overflow: auto; }
+table { border-collapse: collapse; width: 100%; background: white; text-align: left; }
+caption { text-align: left; padding: .75rem; font-weight: bold; }
+th, td { padding: .75rem; border-bottom: 1px solid #d2dee8; white-space: nowrap; }
+th { background: #dce7ee; }

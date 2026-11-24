@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partner Operations</title>
+<link rel="stylesheet" href="style.css">
+<main>
+  <h1>Partner Operations</h1>
+  <p>Review delivery activity across sample partner integrations.</p>
+  <div id="summary" class="summary"></div>
+  <div class="filters">
+    <label>Search deliveries <input id="search" type="search" placeholder="Partner, event, or ID"></label>
+    <label>Status <select id="status"><option value="">All statuses</option><option>Delivered</option><option>Retrying</option><option>Failed</option></select></label>
+  </div>
+  <p id="count" role="status"></p>
+  <div class="table"><table>
+    <caption>Sample delivery activity</caption>
+    <thead><tr><th scope="col">ID</th><th scope="col">Partner</th><th scope="col">Event</th><th scope="col">Status</th><th scope="col">Attempts</th></tr></thead>
+    <tbody id="deliveries"></tbody>
+  </table></div>
+</main>
+<script type="module" src="app.mjs"></script>
+</html>
